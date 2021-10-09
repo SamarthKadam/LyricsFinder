@@ -1,3 +1,4 @@
 Hello Just to test git
 What if I made some changes here
 And some more changes
+This is different branch that is set and contains these lines
