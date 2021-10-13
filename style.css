@@ -221,7 +221,7 @@ input[type="text"]
       width: 100%;
   }
   .grid{
-      grid-gap: 3.5rem;
+      grid-gap: 3.3rem;
   }
   .btns{
       margin-top: 1.5rem;
