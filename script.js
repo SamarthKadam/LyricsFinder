@@ -16,6 +16,12 @@ btn.addEventListener('click',function()
 {
     valueS=singer.value;
     valueA=song.value;
+
+    if(!valueS && !valueA)
+    {
+        alert('Input text are empty');
+        return 
+    }
     let col=Math.floor(Math.random()*300)+1;
     lyricpage.style.backgroundColor=`rgb(${col*1/4},${col*1/2},200)`;
 
@@ -33,6 +39,8 @@ btn.addEventListener('click',function()
     lyricpage.insertAdjacentText('beforeend',data.lyrics);
     lyricpage.classList.remove('not');
     lyricpage.scrollIntoView({behavior:'smooth'});
+    resetit.classList.remove('hid');
+    btn.classList.add('hid');
 }).catch(err=>{
     alert(`${err.message}`);
 })
@@ -64,4 +72,6 @@ resetit.addEventListener('click',function()
     singer.value='';
     lyricpage.innerHTML='';
     lyricpage.classList.add('not');
+    resetit.classList.add('hid');
+    btn.classList.remove('hid');
 })

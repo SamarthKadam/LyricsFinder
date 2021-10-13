@@ -22,6 +22,7 @@ body{
     grid-template-columns: 1fr 1fr;
     padding: 4rem 4rem;
     background-color: rgb(48,205,104);
+    /* background-color: #1ED760; */
 }
 .control{
     width: 90%;
@@ -174,4 +175,45 @@ input[type="text"]
 }
 .not{
     display:none;
+}
+.hid{
+    display: none;
+}
+.twogrid{
+    align-self: center;
+}
+@media (max-width:1276px) {
+    html{
+        font-size: 8px;
+    }
+    .control{
+        width: 75%;
+    }
+    
+}
+@media (max-width:1023px) {
+    html{
+        font-size: 7px;
+    }
+    .control{
+        width: 75%;
+    }
+}
+@media (max-width:894px)
+{
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .control{
+        width: 50%;
+    }
+}
+@media(max-width:646px)
+{
+    html{
+        font-size: 6.5px;
+    }
+    .control{
+        width: 60%;
+    }
 }
