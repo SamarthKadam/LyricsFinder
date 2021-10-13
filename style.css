@@ -210,8 +210,14 @@ input[type="text"]
 }
 @media(max-width:646px)
 {
-    
+
     .control{
-        width: 60%;
+        width: 70%;
     }
+}
+@media(max-width:489px)
+{
+  .control{
+      width: 95%;
+  }
 }
