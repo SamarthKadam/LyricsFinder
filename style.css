@@ -218,6 +218,12 @@ input[type="text"]
 @media(max-width:489px)
 {
   .control{
-      width: 95%;
+      width: 100%;
+  }
+  .grid{
+      grid-gap: 3.5rem;
+  }
+  .btns{
+      margin-top: 1.5rem;
   }
 }
